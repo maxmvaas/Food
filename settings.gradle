@@ -13,4 +13,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Food"
-include ':app'
+include ':core'
+include ':features:feature-food-catalog'
+include ':features:feature-cart'
+include ':data'
