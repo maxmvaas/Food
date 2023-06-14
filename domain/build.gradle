@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'ru.maxmvaas.feature_cart'
+    namespace 'ru.maxmvaas.domain'
     compileSdk 33
 
     defaultConfig {
@@ -29,14 +29,12 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
-
-    buildFeatures {
-        viewBinding true
-    }
 }
 
 dependencies {
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
+
+    implementation 'javax.inject:javax.inject:1'
 }
